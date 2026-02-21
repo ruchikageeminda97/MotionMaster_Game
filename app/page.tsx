@@ -10,7 +10,7 @@ const HINT_AT        = 5;
 const WARN_AT        = 10;
 const REST_TIME      = 3;
 const MEM_Q_TIME     = 40;
-const MEMORIZE_SECS  = 10;
+const MEMORIZE_SECS  = 30;
 const LETTER         = ["A", "B", "C", "D", "E"] as const;
 
 // ── Types ─────────────────────────────────────────────────────────────────────
