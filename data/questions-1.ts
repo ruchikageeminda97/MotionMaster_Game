@@ -6,6 +6,14 @@ export interface Question {
   toSelect: [number, number, number, number, number];
 }
 
+export interface ImgQuestion {
+  imageName: string;      // e.g. "a.PNG", "b.PNG", etc.
+  id: string;             // unique identifier for each image/question set (e.g. "img-001", UUID, or just "a")
+  imgquestions: Array<{
+    question: string;
+    answer: string;
+  }>;
+}
 export const questions: Question[] = [
   { id: "Q001", question: "A car starts with initial speed 17 m/s and accelerates at 5 m/s² for 3 s. What is the final speed?", answer: 32, hint: "v = u + at", toSelect: [22, 28, 32, 36, 42] },
   { id: "Q002", question: "A car starts with initial speed 8 m/s and accelerates at 5 m/s² for 16 s. What is the final speed?", answer: 88, hint: "v = u + at", toSelect: [78, 83, 88, 93, 98] },
@@ -157,4 +165,97 @@ export const questions: Question[] = [
   { id: "Q148", question: "Speed changes from initial 46 m/s to final 116 m/s in 18 s. What is the distance?", answer: 1458, hint: "s = ((u + v)/2) t", toSelect: [1448, 1453, 1458, 1463, 1468] },
   { id: "Q149", question: "Speed changes from initial 20 m/s to final 108 m/s in 20 s. What is the distance?", answer: 1280, hint: "s = ((u + v)/2) t", toSelect: [1270, 1275, 1280, 1285, 1290] },
   { id: "Q150", question: "A car starts with initial speed 29 m/s and accelerates at 2 m/s² for 18 s. What is the final speed?", answer: 65, hint: "v = u + at", toSelect: [55, 60, 65, 70, 75] },
+];
+
+export const imgquestions: ImgQuestion[] = [
+ {
+    imageName: "a.PNG",
+    id: "img-a",
+    imgquestions: [
+      { question: "How many people in this picture?", answer: "9" },
+      { question: "What color is the tent?", answer: "yellow" },
+      { question: "What animal is inside the van?", answer: "giraffe" },
+      { question: "How many trees are shown?", answer: "8" },
+      { question: "What color is the van?", answer: "blue" },
+      { question: "What is the boy on the log doing?", answer: "fishing" },
+      { question: "What animal is sleeping in the tree?", answer: "owl" },
+      { question: "What shape is the moon?", answer: "crescent" },
+      { question: "How many animals are wearing clothes?", answer: "6" },
+      { question: "What color is the picnic table?", answer: "red" },
+      { question: "What is the clown holding?", answer: "megaphone" },
+      { question: "What animal is skateboarding?", answer: "squirrel" }
+    ]
+  },
+ {
+    imageName: "b.PNG",
+    id: "img-b",
+    imgquestions: [
+      { question: "How many people in this picture?", answer: "3" },
+      { question: "What color is the table?", answer: "brown" },
+      { question: "What is the man reading?", answer: "newspaper" },
+      { question: "How many chairs are at the table?", answer: "4" },
+      { question: "What color is the girl's chair?", answer: "red" },
+      { question: "What fruit is on the plate?", answer: "bananas" },
+      { question: "What is on the windowsill?", answer: "flowers" },
+      { question: "What time does the clock show?", answer: "approximately 7:30" },
+      { question: "What is the boy eating from?", answer: "bowl" },
+      { question: "What toy is on the floor near the door?", answer: "boat" },
+      { question: "What color are the kitchen tiles?", answer: "yellow" },
+      { question: "How many bowls are on the table?", answer: "2" }
+    ]
+  },
+ {
+    imageName: "c.PNG",
+    id: "img-c",
+    imgquestions: [
+      { question: "How many children are in this picture?", answer: "5" },
+      { question: "What color is the girl's dress on the swing?", answer: "yellow" },
+      { question: "What is the boy in the tree holding?", answer: "telescope" },
+      { question: "How many trees are shown?", answer: "2" },
+      { question: "What color is the soccer ball?", answer: "white" },
+      { question: "What is the woman sitting on?", answer: "stool" },
+      { question: "What is the boy with blue hair doing?", answer: "kicking" },
+      { question: "What color are the girl's shoes on the swing?", answer: "blue" },
+      { question: "What is the boy with glasses doing?", answer: "reading" },
+      { question: "What color is the building in the background?", answer: "yellow" },
+      { question: "How many children are playing with the ball?", answer: "2" },
+      { question: "What is the woman holding?", answer: "paintbrush" }
+    ]
+  },
+  {
+    imageName: "d.PNG",
+    id: "img-d",
+    imgquestions: [
+      { question: "How many children are in this picture?", answer: "5" },
+      { question: "What color is the picnic blanket?", answer: "yellow" },
+      { question: "How many trees are shown?", answer: "2" },
+      { question: "What color is the girl's hair who is sitting and eating?", answer: "green" },
+      { question: "What is the boy with red hair doing?", answer: "laughing" },
+      { question: "How many juice drinks with straws are visible?", answer: "4" },
+      { question: "What color shirt is the boy with arms raised wearing?", answer: "blue" },
+      { question: "What fruit is in the bowl near the center?", answer: "grapes" },
+      { question: "What is the girl with blue hair holding?", answer: "lunchbox" },
+      { question: "How many houses are in the background?", answer: "2" },
+      { question: "What color shorts is the boy with orange shirt wearing?", answer: "red" },
+      { question: "What is the boy lying down eating?", answer: "sandwich" }
+    ]
+  },
+ {
+    imageName: "e.PNG",
+    id: "img-e",
+    imgquestions: [
+      { question: "How many children are in this picture?", answer: "6" },
+      { question: "What color apples are on the tree?", answer: "red" },
+      { question: "What animal is running with its tongue out?", answer: "dog" },
+      { question: "How many children are sitting on the grass?", answer: "3" },
+      { question: "What color is the girl's shirt who is in the tree?", answer: "teal" },
+      { question: "What is the boy near the door holding?", answer: "kite" },
+      { question: "What is the girl in the apron painting?", answer: "bee" },
+      { question: "What color is the kite?", answer: "multicolor" },
+      { question: "What is the sleeping child doing?", answer: "sleeping" },
+      { question: "How many flowers are in the pot by the door?", answer: "pink" },
+      { question: "What is the boy sitting down holding?", answer: "ball" },
+      { question: "What small animal is near the sleeping child?", answer: "frog" }
+    ]
+  }
 ];
