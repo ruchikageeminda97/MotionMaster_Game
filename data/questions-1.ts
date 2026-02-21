@@ -169,7 +169,7 @@ export const questions: Question[] = [
 
 export const imgquestions: ImgQuestion[] = [
  {
-    imageName: "a.PNG",
+    imageName: "a.png",
     id: "img-a",
     imgquestions: [
       { question: "How many people in this picture?", answer: "9" },
@@ -187,7 +187,7 @@ export const imgquestions: ImgQuestion[] = [
     ]
   },
  {
-    imageName: "b.PNG",
+    imageName: "b.png",
     id: "img-b",
     imgquestions: [
       { question: "How many people in this picture?", answer: "3" },
@@ -205,7 +205,7 @@ export const imgquestions: ImgQuestion[] = [
     ]
   },
  {
-    imageName: "c.PNG",
+    imageName: "c.png",
     id: "img-c",
     imgquestions: [
       { question: "How many children are in this picture?", answer: "5" },
@@ -223,7 +223,7 @@ export const imgquestions: ImgQuestion[] = [
     ]
   },
   {
-    imageName: "d.PNG",
+    imageName: "d.png",
     id: "img-d",
     imgquestions: [
       { question: "How many children are in this picture?", answer: "5" },
@@ -241,7 +241,7 @@ export const imgquestions: ImgQuestion[] = [
     ]
   },
  {
-    imageName: "e.PNG",
+    imageName: "e.png",
     id: "img-e",
     imgquestions: [
       { question: "How many children are in this picture?", answer: "6" },
