@@ -6,7 +6,7 @@ import { questions, type Question } from "@/data/questions-1";
 // ── Constants ────────────────────────────────────────────────────────────────
 const TOTAL_Q       = 20;
 const QUESTION_TIME = 50;
-const HINT_AT       = 25;  // show hint when ≤15 s remain (after 25 s)
+const HINT_AT       = 2;  // show hint when ≤15 s remain (after 25 s)
 const WARN_AT       = 15;  // red warning when ≤10 s remain
 const REST_TIME     = 3;
 
